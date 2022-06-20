@@ -1,0 +1,16 @@
+includes:
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+    level: max
+
+    paths:
+        - src
+
+    bootstrapFiles:
+        - public/bootstrap.php
+
+    ignoreErrors:
+        - "#Call to an undefined method (.*).#"
+
+    reportUnmatchedIgnoredErrors: false
